@@ -15,6 +15,9 @@ let canvas = createCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHei
 canvas.parent('canvas-container');
   ma = atan(sin(QUARTER_PI));
   maxD = dist(0, 0, 200, 200);
+  cam = createCamera();
+  // give it an orthographic projection
+  cam.ortho(-width / 2, width / 2, height / 2, -height / 2, 0, 500);
 }
 function windowResized() {
     let canvasContainer = document.getElementById('canvas-container');
@@ -25,6 +28,7 @@ function windowResized() {
 function draw() {
   background(250,250,250);
   ortho(-400, 400, 400, -400, 0, 1000);
+  orbitControl();
   rotateX(ma);
   rotateY(-QUARTER_PI);
   rotateZ(-ma);
