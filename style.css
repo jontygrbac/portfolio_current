@@ -107,11 +107,6 @@ a:hover {
     z-index: 20;
 }
 
-#canvas-container, #canvas-container2 {
-    width: 33vh;
-    height: 33vh; /* Adjust this as needed */
-    position: relative; /* Adjust this as needed */
-}
 
 .menu-links a {
     display: block;
@@ -371,6 +366,23 @@ article .icon {
     position: relative;
 }
 
+
+#canvas-container, #canvas-container2 {
+    width: 33vh;
+    height: 33vh; /* Adjust this as needed */
+    position: relative; /* Adjust this as needed */
+}
+
+.projects__p {
+    padding-bottom: 1rem;
+}
+
+video {
+    width: 35vh;
+    height: 35vh; /* Adjust this as needed */
+    position: relative;
+}
+
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250,250,250)
@@ -378,8 +390,8 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 33vh;
+    height: 33vh;
 }
 
 .project-title {
